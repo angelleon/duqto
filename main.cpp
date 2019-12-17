@@ -1,11 +1,9 @@
 #include "mainwindow.hpp"
 
-#include <QApplication>
+#include "duqto.hpp"
 
 int main(int argc, char *argv[])
 {
-    QApplication a(argc, argv);
-    MainWindow w;
-    w.show();
-    return a.exec();
+    duqto::Duqto dq(argc, argv);
+    return dq.exec();
 }
