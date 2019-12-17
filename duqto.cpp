@@ -4,6 +4,7 @@ using namespace duqto;
 
 Duqto::Duqto(int argc, char **argv):QApplication(argc, argv)
 {
+    setApplicationName("Duqto");
     this->w = new MainWindow();
     QString username = qEnvironmentVariable("USER", "user");
     qDebug() << "Found username: " << username;
